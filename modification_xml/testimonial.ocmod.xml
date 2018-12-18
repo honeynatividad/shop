@@ -1,0 +1,37 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Boss Testimonial</font>]]></name>
+    <version><![CDATA[<b>1.0</b>]]></version>
+	<code>bosstestimonial</code>
+    <author><![CDATA[<font color="#CC0000"><b>Bossthemes</font>]]></author>
+    <link><![CDATA[http://www.bossthemes.com]]></link>
+	<file path="admin/controller/common/menu.php">
+		<operation>
+			<search><![CDATA[
+            $this->load->language('common/menu');
+            ]]></search>
+			<add position="after"><![CDATA[
+            $this->load->language('module/boss_testimonial');
+			$data['text_testimonial'] = $this->language->get('heading_title');
+			$data['testimonial'] = $this->url->link('catalog/boss_testimonial', 'token=' . $this->session->data['token'], true);
+            ]]></add>
+		</operation>
+	</file>	
+    <file path="admin/language/*/common/menu.php">
+		<operation>
+			<search><![CDATA[$_['text_system']                      = 'System';]]></search>
+			<add position="after"><![CDATA[
+			$_['heading_title']           = 'Customer Testimonials';]]></add>
+		</operation>
+	</file>
+    	
+    <file path="admin/view/template/common/menu.tpl">
+		<operation>
+			<search><![CDATA[
+            <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+            ]]></search>
+			<add position="after"><![CDATA[
+			<li><a href="<?php echo $testimonial; ?>"><?php echo $text_testimonial; ?></a></li>            
+            ]]></add>
+		</operation>
+	</file>
+</modification>

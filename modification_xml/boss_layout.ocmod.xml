@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+   	<name><![CDATA[<font color="#0000"><b>Boss Layout</font>]]></name>
+    <version><![CDATA[<b>1.0</b>]]></version>
+	<code>boss_layout</code>
+    <author><![CDATA[<font color="#CC0000"><b>Bossthemes</font>]]></author>
+    <link><![CDATA[www.bossthemes.com]]></link>
+<file path="admin/controller/common/menu.php">
+		<operation>
+			<search><![CDATA[$data['layout'] = $this->url->link('design/layout', 'token=' . $this->session->data['token'], true);]]></search>
+			<add position="before"><![CDATA[$data['design'] = $this->url->link('design/boss_layout', 'token=' . $this->session->data['token'], true);]]></add>
+		</operation>
+</file>
+<file path="admin/view/template/common/menu.tpl">
+		<operation>
+			<search><![CDATA[<li><a href="<?php echo $layout; ?>"><?php echo $text_layout; ?></a></li>]]></search>
+			<add position="before"><![CDATA[<li><a href="<?php echo $design; ?>"><?php echo 'Layout Composer'; ?></a></li>]]></add>
+		</operation>
+</file>
+</modification>

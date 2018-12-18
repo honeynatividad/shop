@@ -1,0 +1,108 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Seo Boss Blog</font>]]></name>
+    <version><![CDATA[<b>1.0</b>]]></version>
+    <author><![CDATA[<font color="#CC0000"><b>Bossthemes</font>]]></author>
+    <link><![CDATA[www.bossthemes.com]]></link>
+	<code>seoblog</code>
+<!-- sw-ad@hotmail.com -->	                      
+<file path="catalog/controller/startup/seo_url.php">
+		<operation>
+			<search><![CDATA[
+			if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+			]]></search>
+			<add position="before"><![CDATA[
+			if ($url[0] == 'blog_article_id') {
+				$blog = 1;
+				$this->request->get['blog_article_id'] = $url[1];
+			}
+			
+			if ($url[0] == 'blog_category_id') {
+				$blog = 1;
+				if (!isset($this->request->get['path'])) {
+					$this->request->get['path'] = $url[1];
+				} else {
+					$this->request->get['path'] .= '_' . $url[1];
+				}
+			}
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			if ($url[0] == 'category_id') {
+			]]></search>
+			<add position="after"><![CDATA[
+			$blog = 0;
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+			]]></search>
+			<add position="replace"><![CDATA[
+			if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id' && $url[0] != 'blog_category_id' && $url[0] != 'blog_article_id') {
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			} elseif (isset($this->request->get['path'])) {
+			]]></search>
+			<add position="replace"><![CDATA[
+			} elseif (isset($this->request->get['path']) && isset($blog) && $blog==0) {
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			$this->request->get['route'] = 'information/information';
+			]]></search>
+			<add position="after"><![CDATA[
+			}elseif (isset($this->request->get['blog_article_id']) && isset($blog) && $blog==1) {
+					$this->request->get['route'] = 'bossblog/article';
+				}
+			elseif (isset($this->request->get['path']) && isset($blog) && $blog==1) {
+					$this->request->get['route'] = 'bossblog/blogcategory';
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+			]]></search>
+			<add position="replace"><![CDATA[
+			if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id') || ($data['route'] == 'bossblog/article' && $key == 'blog_article_id') || ($data['route'] == 'bossblog/bossblog'&& $value='bossblog/bossblog')  || ($data['route'] == 'bossblog/blogsearch'&& $value='bossblog/blogsearch')) {
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = 'category_id=" . (int)$category . "'");
+			]]></search>
+			<add position="replace"><![CDATA[
+			$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = 'blog_category_id=" . (int)$category . "'");
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			} elseif ($key == 'path') {
+			]]></search>
+			<add position="replace"><![CDATA[
+			} elseif ($key == 'path' && $data['route'] == 'product/category') {
+				$categories = explode('_', $value);
+
+					foreach ($categories as $category) {
+						$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = 'category_id=" . (int)$category . "'");
+
+						if ($query->num_rows && $query->row['keyword']) {
+							$url .= '/' . $query->row['keyword'];
+						} else {
+							$url = '';
+
+							break;
+						}
+					}
+
+					unset($data[$key]);
+				}elseif ($key == 'path' && $data['route'] == 'bossblog/blogcategory') {
+			]]></add>
+		</operation>		
+		
+</file>
+</modification>					   
+					   

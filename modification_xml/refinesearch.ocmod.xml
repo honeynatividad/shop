@@ -1,0 +1,37 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Boss Refine Search</font>]]></name>
+    <version><![CDATA[<b>1.0</b>]]></version>
+	<code>bossrefinesearch</code>
+    <author><![CDATA[<font color="#CC0000"><b>Bossthemes</font>]]></author>
+    <link><![CDATA[http://www.bossthemes.com]]></link>
+	<file path="admin/controller/common/menu.php">
+		<operation>
+			<search><![CDATA[
+            $this->load->language('common/menu');
+            ]]></search>
+			<add position="after"><![CDATA[
+            $this->load->language('module/boss_refinesearch');
+			$data['text_refinesearch'] = $this->language->get('heading_title');
+			$data['boss_refinesearch'] = $this->url->link('catalog/boss_refinesearch_setting', 'token=' . $this->session->data['token'], true);
+            ]]></add>
+		</operation>
+	</file>	
+    <file path="admin/language/*/common/menu.php">
+		<operation>
+			<search><![CDATA[$_['text_system']                      = 'System';]]></search>
+			<add position="after"><![CDATA[
+			$_['heading_title']           = 'Boss Refine Search';]]></add>
+		</operation>
+	</file>
+    	
+    <file path="admin/view/template/common/menu.tpl">
+		<operation>
+			<search><![CDATA[
+            <li><a href="<?php echo $filter; ?>"><?php echo $text_filter; ?></a></li>
+            ]]></search>
+			<add position="after"><![CDATA[
+			<li><a href="<?php echo $boss_refinesearch; ?>"><?php echo $text_refinesearch; ?></a></li>            
+            ]]></add>
+		</operation>
+	</file>
+</modification>

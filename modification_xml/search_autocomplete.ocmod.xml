@@ -1,0 +1,57 @@
+<modification>
+	<name><![CDATA[<font color="#0000"><b>Boss - Search autocomplete</font>]]></name>
+	<version><![CDATA[<b>1.0</b>]]></version>
+	<author><![CDATA[<font color="#CC0000"><b>Bossthemes</font>]]></author>
+	<link><![CDATA[www.bossthemes.com]]></link>
+	<code>7</code>
+	<file path="catalog/controller/common/search.php">
+		<operation>
+			<search><![CDATA[return $this->load->view('common/search', $data);]]></search>
+			<add position="before"><![CDATA[
+			$this->load->model('setting/setting');
+			$module_info = current($this->model_setting_setting->getSetting("search_autocomplete"));
+			$data['image'] = $module_info['image'];
+			$data['price'] = $module_info['price'];
+			$data['status'] = $module_info['status'];
+			$data['limit'] = $module_info['limit'];
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/view/theme/*/template/common/search.tpl">
+		<operation>
+			<search><![CDATA[</div>]]></search>
+			<add position="after"><![CDATA[
+			<script type="text/javascript">
+				<?php if (isset($status)) { ?>
+				var status = <?php echo $status; ?>;
+				var image = <?php echo $image; ?>;
+				var price = <?php echo $price; ?>;
+				var limit = <?php echo $limit; ?>;
+				if (status == 1) {
+					$('input[name=\'search\']').autocomplete({
+						source: function (request, response) {
+							$.ajax({
+								url: 'index.php?route=module/boss_search_autocomplete&limit=' + limit + '&filter_name=' + encodeURIComponent(request),
+								dataType: 'json',
+								success: function (json) {
+									response($.map(json, function (item) {
+										return {
+											label: item['name'],
+											value: item['product_id'],
+											price: item['price'],
+											special: item['special'],
+											href: item['href'],
+											image: item['image']
+										}
+									}));
+								}
+							});
+						},
+					});
+				}
+				<?php } ?>
+			</script>
+			]]></add>
+		</operation>
+	</file>
+</modification>

@@ -1,0 +1,62 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Add Newsletter Menu</font>]]></name>
+    <version><![CDATA[<b>1.0</b>]]></version>
+	<code>newsletter</code>
+    <author><![CDATA[<font color="#CC0000"><b>Bossthemes</font>]]></author>
+    <link><![CDATA[www.bossthemes.com]]></link>
+	<file path="admin/controller/common/menu.php">
+		<operation>
+			<search><![CDATA[
+            $this->load->language('common/menu');
+            ]]></search>
+			<add position="after"><![CDATA[
+            $data['text_newssubscribe'] = $this->language->get('text_newssubscribe');
+			$data['newssubscribe'] = $this->url->link('sale/newssubscribers', 'token=' . $this->session->data['token'], true);
+            ]]></add>
+		</operation>
+	</file>
+    	<file path="admin/language/*/common/menu.php">
+		<operation>
+			<search><![CDATA[$_['text_system']                      = 'System';]]></search>
+			<add position="after"><![CDATA[$_['text_newssubscribe']     = 'Newsletter Subscribers';]]></add>
+		</operation>
+	</file>
+    	<file path="admin/controller/marketing/contact.php">
+		<operation>
+			<search><![CDATA[
+            case 'newsletter':
+            ]]></search>
+			<add position="after"><![CDATA[
+            $results = $this->model_customer_customer->getNewsletterSubscribers();
+
+						foreach ($results as $result) {
+							$emails["s".$result['id']] = $result['email_id'];
+						}
+            ]]></add>
+		</operation>
+	</file>
+    <file path="admin/model/customer/customer.php">
+		<operation>
+			<search><![CDATA[
+            class ModelCustomerCustomer extends Model {
+            ]]></search>
+			<add position="after"><![CDATA[
+            public function getNewsletterSubscribers() {
+		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "subscribe");
+
+		return $query->rows;
+	}
+            ]]></add>
+		</operation>
+	</file>
+    <file path="admin/view/template/common/menu.tpl">
+		<operation>
+			<search><![CDATA[
+            <li><a href="<?php echo $custom_field; ?>"><?php echo $text_custom_field; ?></a></li>
+            ]]></search>
+			<add position="after"><![CDATA[
+            <li><a href="<?php echo $newssubscribe; ?>"><?php echo $text_newssubscribe; ?></a></li>
+            ]]></add>
+		</operation>
+	</file>
+</modification>

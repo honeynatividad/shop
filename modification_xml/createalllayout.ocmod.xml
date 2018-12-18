@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Creat All Layout</font>]]></name>
+    <version><![CDATA[<b>1.0</b>]]></version>
+    <author><![CDATA[<font color="#CC0000"><b>Bossthemes</font>]]></author>
+    <link><![CDATA[http://www.bossthemes.com]]></link>
+	<code>createalllayout</code>
+<!-- sw-ad@hotmail.com -->	                      
+<file path="admin/view/template/design/layout_list.tpl">
+		<operation>
+			<search><![CDATA[
+			<div class="pull-right"><a href="<?php echo $add; ?>" data-toggle="tooltip" title="<?php echo $button_add; ?>" class="btn btn-primary"><i class="fa fa-plus"></i></a>
+			]]></search>
+			<add position="replace"><![CDATA[
+			<div class="pull-right"><a href="index.php?route=bossthemes/bossthemes&token=<?php echo $_GET['token'];?>" data-toggle="tooltip" title="Create All Layout" class="btn btn-success"><i class="fa fa-plus"></i></a> <a href="<?php echo $add; ?>" data-toggle="tooltip" title="<?php echo $button_add; ?>" class="btn btn-primary"><i class="fa fa-plus"></i></a>
+			]]></add>
+		</operation>
+</file>
+</modification>					   
+					   

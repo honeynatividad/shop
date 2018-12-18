@@ -1,0 +1,83 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Add new position</font>]]></name>
+    <version><![CDATA[<b>1.0</b>]]></version>
+	<code>loadposition</code>
+    <author><![CDATA[<font color="#CC0000"><b>Bossthemes</font>]]></author>
+    <link><![CDATA[www.bossthemes.com]]></link>
+<!-- sw-ad@hotmail.com -->	                      
+<file path="catalog/controller/common/header.php">
+		<operation>
+			<search><![CDATA[
+			$data['links'] = $this->document->getLinks();
+			]]></search>
+			<add position="after"><![CDATA[
+			$data['btheader'] = $this->load->controller('bossthemes/btheader');
+			$data['btslideshow'] = $this->load->controller('bossthemes/btslideshow');
+			$data['btmainmenu'] = $this->load->controller('bossthemes/btmainmenu');
+			$data['boss_search'] = $this->load->controller('bossthemes/boss_search');
+			]]></add>
+		</operation>
+		
+</file>
+<file path="catalog/controller/common/cart.php">
+		<operation>
+			<search><![CDATA[
+			$data['text_empty'] = $this->language->get('text_empty');
+			]]></search>
+			<add position="before"><![CDATA[
+			$data['heading_title'] = $this->language->get('heading_title');
+			]]></add>
+		</operation>
+</file>
+<file path="catalog/controller/common/footer.php">
+		<operation>
+			<search><![CDATA[
+			$data['newsletter'] = $this->url->link('account/newsletter', '', true);
+			]]></search>
+			<add position="after"><![CDATA[
+			$data['btfootertop'] = $this->load->controller('bossthemes/btfootertop');
+			$data['btfootermid'] = $this->load->controller('bossthemes/btfootermid');
+			$data['btnewsletter'] = $this->load->controller('bossthemes/btnewsletter');
+			]]></add>
+		</operation>
+</file>
+<file path="catalog/controller/product/compare.php">
+		<operation>
+			<search><![CDATA[
+			$data['button_cart'] = $this->language->get('button_cart');
+			]]></search>
+			<add position="after"><![CDATA[
+            $data['button_wishlist'] = $this->language->get('button_wishlist');
+			]]></add>
+		</operation>
+</file>
+<file path="admin/view/template/design/layout_form.tpl">
+		<operation>
+			<search><![CDATA[
+			<td class="text-left"><select name="layout_module[<?php echo $module_row; ?>][position]" class="form-control">
+			]]></search>
+			<add position="after"><![CDATA[
+            <option value="btheader" <?php echo ($layout_module['position'] == 'btheader')?'selected="selected"':''; ?>><?php echo 'Header'; ?></option>
+			<option value="btmainmenu" <?php echo ($layout_module['position'] == 'btmainmenu')?'selected="selected"':''; ?>><?php echo 'Main Menu'; ?></option>
+			<option value="btslideshow" <?php echo ($layout_module['position'] == 'btslideshow')?'selected="selected"':''; ?>><?php echo 'Slideshow'; ?></option>
+			<option value="btfootertop" <?php echo ($layout_module['position'] == 'btfootertop')?'selected="selected"':''; ?>><?php echo 'Footer Top'; ?></option>
+			<option value="btfootermid" <?php echo ($layout_module['position'] == 'btfootermid')?'selected="selected"':''; ?>><?php echo 'Footer Middle'; ?></option>
+			<option value="btnewsletter" <?php echo ($layout_module['position'] == 'btnewsletter')?'selected="selected"':''; ?>><?php echo 'Footer Newsletter'; ?></option>
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			html += '    <option value="content_top"><?php echo $text_content_top; ?></option>';
+			]]></search>
+			<add position="before"><![CDATA[
+            html += '    <option value="btheader"><?php echo 'Header'; ?></option>';
+			html += '    <option value="btmainmenu"><?php echo 'Main Menu'; ?></option>';
+			html += '    <option value="btslideshow"><?php echo 'Slideshow'; ?></option>';
+			html += '    <option value="btfootertop"><?php echo 'Footer Top'; ?></option>';
+			html += '    <option value="btfootermid"><?php echo 'Footer Middle'; ?></option>';
+			html += '    <option value="btnewsletter"><?php echo 'Footer Newsletter'; ?></option>';
+			]]></add>
+		</operation>
+</file>
+</modification>					   
+					   

@@ -1,0 +1,44 @@
+<modification>
+	<name><![CDATA[<font color="#0000"><b>Add Product Special Countdown</font>]]></name>
+    <version><![CDATA[<b>1.0</b>]]></version>
+    <author><![CDATA[<font color="#CC0000"><b>Bossthemes</font>]]></author>
+    <link><![CDATA[www.bossthemes.com]]></link>
+	<code>special</code>
+	<file path="catalog/controller/product/product.php">
+		<operation>
+			<search><![CDATA[
+			$this->model_catalog_product->updateViewed($this->request->get['product_id']);
+			]]></search>
+			<add position="after"><![CDATA[
+			$data['specialProduct'] = $this->load->controller('module/boss_special/specialProduct');
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/product/category.php">
+		<operation>
+			<search><![CDATA[
+			$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
+			]]></search>
+			<add position="after"><![CDATA[
+			$money_save_original = $result['price'] - $result['special'];
+			$percent = round((float)($money_save_original/$result['price']*100),0);
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			$special = false;
+			]]></search>
+			<add position="after"><![CDATA[
+			$percent = false;
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			'product_id'  => $result['product_id'],
+			]]></search>
+			<add position="after"><![CDATA[
+			'percent' 	 => $percent,
+			]]></add>
+		</operation>
+	</file>
+</modification>
