@@ -1,0 +1,26 @@
+.right-to-left #d_quickcheckout .form-group > *, .right-to-left #d_quickcheckout .qc-totals > div > * {
+	float: right;
+}
+.right-to-left #d_quickcheckout form.form-horizontal .control-label {
+    text-align: right;
+}
+.right-to-left .checkbox input[type="checkbox"], .right-to-left .checkbox-inline input[type="checkbox"], 
+.right-to-left .radio input[type="radio"], .right-to-left .radio-inline input[type="radio"] {
+    margin-left: 0;
+    margin-right: -20px;
+}
+.right-to-left .checkbox label, .right-to-left .radio label {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.right-to-left #d_quickcheckout #shipping_method .radio label .price, 
+.right-to-left #d_quickcheckout #payment_method .radio label .price {
+    float: left;
+}
+.right-to-left .radio span.price {
+    margin-right: 5px;
+    margin-left: 0;
+}
+.right-to-left .form-horizontal .control-label {
+	text-align: left;
+}
