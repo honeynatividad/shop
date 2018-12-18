@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @version		$Id: de-DE.xml 3721 2014-08-18 13:37:29Z mic $ -->
+<language>
+	<id>Deutsch de_DE</id>
+    <!-- this translation version -->
+	<versionLang>2.0</versionLang>
+    <!-- the min. required shop version -->
+    <versionShopMin>2.0.0</versionShopMin>
+    <!-- the max. shop version (you have tested!) -->
+    <versionShopMax>2.0.0</versionShopMax>
+	<author>OSWorX</author>
+    <authorUrl>http://osworx.net</authorUrl>
+    <authorEmail>info@osworx.net</authorEmail>
+    <!-- optional if provided -->
+    <updateServer></updateServer>
+    <license>GPL http://www.gnu.org/licenses/gpl.html</license>
+    <date>2014.06.04</date>
+    <!-- MUST be language -->
+    <type>language</type>
+    <!-- language target - options: both | admin | user -->
+    <target>both</target>
+
+    <!-- note: for fields use either <![CDATA[ .. ]]> or htmlentities -->
+    <description>
+        <en><![CDATA[German Language, Front- & Backend]]></en>
+        <de>Deutsche Sprache, Benutzer &amp; Admin</de>
+    </description>
+
+    <!-- add here all required values the system need -->
+    <params>
+        <name>Deutsch</name>
+        <code>de</code>
+        <locale>de_DE,de-de,german,de_DE.UTF-8</locale>
+        <image>de.png</image>
+        <directory>de_DE</directory>
+        <filename>de_DE</filename>
+    </params>
+
+    <!-- optional folder- / filelist: use if folder structure is NOT the normal OR the package does NOT contain the main folder upload as container for all folders and files as given by OpenCart -->
+    <fileList>
+        <folders>
+            <!-- normally upload -->
+            <root>upload</root>
+            <!-- leave empty if not used -->
+            <folder>folder1</folder>
+        </folders>
+        <files>
+            <!-- optional files - leave empty if not used -->
+            <file></file>
+        </files>
+        <!-- optional list of all files to ignore -->
+        <ignore></ignore>
+    </fileList>
+</language>

@@ -1,0 +1,80 @@
+.ui-sortable li {
+    margin: 0px 0px 5px;
+    padding: 10px;
+    background-color: #eee;
+    list-style: none;
+	cursor:move;
+}
+.sub-row ul.bt-menu-column li{
+	display: inline-block;
+	border: 1px dotted;
+	height: 100px;
+	margin: 0 2px;
+	overflow:hidden;
+}
+.bt-sub-menu{display:none;}
+.openMenu .bt-sub-menu{
+	display:block;
+
+}
+.openMenu .sub-row{
+	border: 1px dotted;
+	margin: 10px 0;
+	height:170px;
+}
+.menu-title{
+	position:relative;
+}
+.menu-title p{display:inline-block;margin:0px;width:150px;	position:relative; vertical-align:top;}
+.menu-title p span.bthidden{display:inline-block; width:76%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; vertical-align:-3px}
+.menu-title p span.box_hover{position:absolute; width:300px; padding:10px; top:-58px; left:0; display:none; background:none repeat scroll 0 0 rgba(0, 0, 0, 0.5); border:1px solid #000; color:#fff}
+.menu-title p span.bthidden:hover{cursor:default}
+.menu-title p:hover span.box_hover{display:block;}
+.menu-title p.bt-open{
+	cursor:pointer;
+	background: url('../../image/desc.png') no-repeat left;
+	padding-left: 30px;
+}
+/*.menu-title p span.bthidden{
+	width: 110px;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align:top;
+	height:17px;
+}*/
+.openMenu .menu-title p.bt-open{
+	background: url('../../image/asc.png') no-repeat left;
+	padding-left: 30px;
+}
+.bt-quick-access{
+	margin-top: -8px;
+	float: right;
+	cursor:pointer;
+}
+.bt-rowquick-access{
+	float: right;
+	top:15px;
+	position: relative;
+	cursor:pointer;
+}
+.bt-add {margin:10px 0;}
+.column-desc{float:left;margin-top:-10px;}
+.bt-columnquick-access{float:right;cursor:pointer;}
+.col-1{width: 16%;}
+.col-2{width: 32%;}
+.col-3{width: 48%;}
+.col-4{width: 64%;}
+.col-5{width: 80%;}
+.col-6{width: 100%;}
+a.button{
+	background: none repeat scroll 0 0 #003a88;
+  
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+	
+}
