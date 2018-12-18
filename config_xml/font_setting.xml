@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items_setting>
+  <groups>
+    <title>General</title>
+    <item>
+      <text>General</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>body,.boss-filter-container .tabs li a</class_name>
+    </item>
+  </groups>
+  <groups>
+    <title>Header</title>
+    <item>
+      <text>header</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>#top, header,.currency .btn, .language .btn,#cart &amp;gt; .btn</class_name>
+    </item>
+  </groups>
+  <groups>
+    <title>Footer</title>
+    <item>
+      <text>Footer font 1</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>footer h3,.bt-footer-middle .box.boss-recent-post .box-heading span </class_name>
+    </item>
+    <item>
+      <text>Footer font 2</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>footer</class_name>
+    </item>
+  </groups>
+  <groups>
+    <title>Menu</title>
+    <item>
+      <text>Menu font 1</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>.mega-menu ul.nav &amp;gt; li &amp;gt; a</class_name>
+    </item>
+    <item>
+      <text>Menu font 2</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>.mega-menu</class_name>
+    </item>
+  </groups>
+  <groups>
+    <title>Product</title>
+    <item>
+      <text>Product name</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>.name &amp;gt; a, .article-name a, .box .article-title, .box .comment-title, #cart .dropdown-menu .description, .table tbody td.name a</class_name>
+    </item>
+    <item>
+      <text>Product description</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>.description p</class_name>
+    </item>
+    <item>
+      <text>Product price</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>.price,.product-info .price_info .price,.product-info .price_info .price-new,.product-info .price_info .price-old,.cart-info .table tbody tr td.product-price, .cart-info .table tbody tr td.total, .checkout .table tbody tr td.product-price, .checkout .table tbody tr td.total</class_name>
+    </item>
+  </groups>
+  <groups>
+    <title>Title</title>
+    <item>
+      <text>Heading 1</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>h1,.box.boss-recent-post .box-heading span,.htabs ul li a</class_name>
+    </item>
+    <item>
+      <text>Heading 2</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>h2</class_name>
+    </item>
+    <item>
+      <text>Heading 3</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>h3</class_name>
+    </item>
+    <item>
+      <text>Breadcrumb</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>.breadcrumb a</class_name>
+    </item>
+  </groups>
+  <customs/>
+</items_setting>

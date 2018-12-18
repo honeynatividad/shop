@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items_setting>
+  <customs/>
+    <groups>
+    <title>General</title>
+    <item>
+      <text>Background color 1</text>
+      <name>g_bg_color_1</name>
+      <class>body</class>
+      <value>f7f7f7</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Background color 2</text>
+      <name>g_bg_color_2</name>
+      <class>#cart .dropdown-menu .cart_bottom .buttons,.bt-footer-middle .footer-social a:hover,.popular-cate .box-content .prev:hover, .popular-cate .box-content .next:hover, .bt-block-theme-features, .product-info + .htabs ul li a:before,div.jGrowl div.jGrowl-notification .jGrowl-button .buttons,.box .boss-alphabet ul li a:hover,.bt-tagcloud .box-content a:hover,.category-list ul li:hover,.b_bulk_title, .article-layout .article-image, .article-related .content-articles .relt-article .image, .circularG, .bt-service .bt-service-content h2:before</class>
+      <value>fd5f14</value>
+      <style>background-color</style>
+    </item>
+	<item>
+      <text>Border color</text>
+      <name>g_border_color_</name>
+      <class>#search,.mega-menu > ul.nav > li .dropdown,.checkout .panel .panel-heading h4.panel-title,.result-pagination .links .pagination li > a:hover, .result-pagination .links .pagination li.active > span,.manufacturer-list,#top .dropdown-menu,.mega-menu > ul.nav > li .dropdown .menu-row ul li:hover > .sub_menu,.bt-staticblock-shipping .bt-staticblock h3:before,footer h3:before, .bt-footer-middle .box.boss-recent-post .box-heading span:before,.box .boss-alphabet ul li a:hover,.bt-tagcloud .box-content a:hover,.category-list ul li:hover,.navbar .nav > li.dropdown .dropdown-menu,#boss_bulk_order span.ui-corner-all, .bt-footer-middle .footer-newsletter input.form-control</class>
+      <value>fd5f14</value>
+      <style>border-color</style>
+    </item>
+    <item>
+      <text>Text color 1 normal</text>
+      <name>g_text_1</name>
+      <class>body,a,.product-filter .display .btn-list,.product-filter .display .btn-grid,.article-filter .display .btn-list, .article-filter .display .btn-grid, .box.bt-category  .box-content .box-category li a</class>
+      <value>000000</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Text Color 1 hover</text>
+      <name>g_color_link_hover</name>
+      <class>a:hover,a:focus,.boss-blog-featured .article-detail .article-name a:hover, .product-filter .display .btn-list:hover, .product-filter .display .btn-grid:hover, .product-filter .display .btn-list.active, .product-filter .display .btn-grid.active,.category-info h3,.category-list h4,.article-filter .display .btn-list:hover, .article-filter .display .btn-grid:hover, .article-filter .display .btn-list.active, .article-filter .display .btn-grid.active,.article-name a:hover, .comment-item .comment-item-header .comment-by span,.product-info .price_info .price, .product-info .price_info .price-new,#review .box-review p.author span:after,h1.page-title,.result-pagination .links .pagination li > a:hover, .result-pagination .links .pagination li.active > span, .product-info h2, .bt-recent-comments .box-content .recent-comment-item .comment-by,.box.bt-category  .box-content .box-category li.active >a,.box.bt-category  .box-content .box-category li:hover> a,.box.bt-category  .box-content .box-category li a.list-group-item.active,.box.boss_blog-cat .box-content .box-category li.active >a, .box.bt-category  .box-content .box-category li a:hover, div.jGrowl div.jGrowl-notification div.jGrowl-message h3 a, div.jGrowl div.jGrowl-notification div.jGrowl-header, .bt-service .bt-service-content .bt-service-icon:hover</class>
+      <value>fd5f14</value>
+      <style>color</style>
+    </item>
+	  <item>
+      <text>Text 3 color</text>
+      <name>g_text_3</name>
+      <class>.boss-blog-featured .article-detail .article-name a, .article-name a</class>
+      <value>5f5f5f</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Text 4 color</text>
+      <name>g_text_4</name>
+      <class>a.btn-readmore, .comments .submit-button .btn-submit</class>
+      <value>3c3b48</value>
+      <style>color</style>
+    </item>
+  </groups>
+  <groups>
+    <title>Header</title>
+    <item>
+      <text>Header background color 1</text>
+      <name>h_bg_color_1</name>
+      <class>#top</class>
+      <value>f9f9f9</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Header background color 2</text>
+      <name>h_bg_color_2</name>
+      <class>header, .boss_header</class>
+      <value>f4f4f4</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Text color 1 normal</text>
+      <name>h_text_1_nomal</name>
+      <class>#top,#top a,.currency .btn,.language .btn, .open-bt-mobile</class>
+      <value>000000</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Text color 1 hover</text>
+      <name>h_text_1_hover</name>
+      <class>#top a:hover , #top li.dropdown.open> a, #top .btn-group.open >.btn,#top .dropdown-menu>li>a:hover,.currency .btn:hover,.language .btn:hover, .currency .dropdown-menu .btn:hover, .open-bt-mobile:hover</class>
+      <value>fd5f14</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Text color 2 normal</text>
+      <name>h_text_2_normal</name>
+      <class>#top .dropdown-menu > li > a,.currency .dropdown-menu .btn</class>
+      <value>434343</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Border color 1</text>
+      <name>h_border_color_1</name>
+      <class>#top</class>
+      <value>eaeaea</value>
+      <style>border-color</style>
+    </item>
+    <item>
+      <text>Border color 2</text>
+      <name>h_border_color_2</name>
+      <class>header</class>
+      <value>e4e4e4</value>
+      <style>border-color</style>
+    </item>
+  </groups>
+  <groups>
+    <title>Footer</title>
+    <item>
+      <text>Footer background color</text>
+      <name>f_bg_color</name>
+      <class>footer</class>
+      <value>e6dbdc</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Text color 1 normal</text>
+      <name>f_text_1_normal</name>
+      <class>footer, footer h3, footer a, footer .boss-recent-post .item-recent-post .time-stamp</class>
+      <value>242424</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Text color 1 hover</text>
+      <name>f_text_1_hover</name>
+      <class>footer a:hover,.bt-footer-middle .bt-block-footer ul li i, .bt-footer-bottom .link ul li a:hover</class>
+      <value>fd5f14</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Text color 2</text>
+      <name>f_text_2</name>
+      <class>.bt-footer-bottom .link ul li a</class>
+      <value>7b7b7b</value>
+      <style>color</style>
+    </item>
+  </groups>
+  <groups>
+    <title>Menu</title>
+    <item>
+      <text>Text Color normal</text>
+      <name>m_text_normal</name>
+      <class>.navbar .nav > li > a,.mega-menu ul.nav > li > a, .mega-menu,.mega-menu a,.navbar,.navbar a</class>
+      <value>212121</value>
+      <style>color</style>
+    </item>
+	<item>
+      <text>Text Color hover</text>
+      <name>m_text_hover</name>
+      <class>.navbar .nav > li > a:hover,.navbar .nav > li > a:focus, .mega-menu > ul.nav > li >a:focus,.mega-menu ul.nav > li > a:hover, .mega-menu a:hover,.mega-menu > ul.nav > li .dropdown  .menu-column ul.column.product .name a:hover,.mega-menu > ul.nav > li .dropdown  .menu-column .parent,.navbar a:hover</class>
+      <value>fd5f14</value>
+      <style>color</style>
+    </item>
+  </groups>
+  <groups>
+    <title>Product</title>
+    <item>
+      <text>Product name normal color</text>
+      <name>p_name_text_normal</name>
+      <class>.name a,#cart .dropdown-menu .table td.name a </class>
+      <value>242424</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Product name hover color</text>
+      <name>p_name_text_hover</name>
+      <class>.name a:hover,#cart .dropdown-menu .table td.name a:hover</class>
+      <value>fd5f14</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Product description</text>
+      <name>p_des_text</name>
+      <class>.description p</class>
+      <value>6a6a6a</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Price color</text>
+      <name>p_price_text</name>
+      <class>.price,#cart .dropdown-menu .cart_bottom table td,.cart-info .table tbody tr td.product-price, .cart-info .table tbody tr td.total, .checkout .table tbody tr td.product-price, .checkout .table tbody tr td.total,.cart-total table tr td.right</class>
+      <value>000000</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Special price color</text>
+      <name>p_spec_text</name>
+      <class>.price-new</class>
+      <value>000000</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Old price color</text>
+      <name>p_old_text</name>
+      <class>.price-old</class>
+      <value>797979</value>
+      <style>color</style>
+    </item>
+	<item>
+      <text>Rating color</text>
+      <name>p_rating_color</name>
+      <class>.rating i</class>
+      <value>f3b931</value>
+      <style>color</style>
+    </item>
+  </groups>
+  <groups>
+    <title>Button</title>
+    <item>
+      <text>Button 1 background color normal</text>
+      <name>button_1_bg_normal</name>
+      <class>.btn, .btn.btn-gray:hover, .btn.btn-gray.active, #cart > .btn:hover,#cart.open > .btn, .compare-info .btn-wishlist:hover, .compare-info .btn-cart</class>
+      <value>fd5f14</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Button 1 background color hover</text>
+      <name>button_1_bg_hover</name>
+      <class>.btn:hover, .btn.active, .jGrowl-button .buttons .btn:hover, .compare-info .btn-cart:hover, #cart .dropdown-menu .cart_bottom .buttons .btn:hover</class>
+      <value>e94e05</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Button 1 text color normal</text>
+      <name>button_1_text_normal</name>
+      <class>.btn, .btn.btn-gray:hover, .btn.btn-gray.active, #cart > .btn:hover,#cart.open > .btn, .compare-info .btn-wishlist:hover, .compare-info .btn-cart</class>
+      <value>ffffff</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Button 1 text color hover</text>
+      <name>button_1_text_hover</name>
+      <class>.btn:hover, .btn.active, .compare-info .btn-cart:hover</class>
+      <value>ffffff</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Button 1 border color</text>
+      <name>button_1_border_color</name>
+      <class>.btn, .btn.btn-gray:hover, .btn.btn-gray.active, #cart > .btn:hover,#cart.open > .btn, .compare-info .btn-wishlist:hover, .compare-info .btn-cart</class>
+      <value>fd5f14</value>
+      <style>border-color</style>
+    </item>
+    <item>
+      <text>Button 1 border color hover</text>
+      <name>button_1_border_color_hv</name>
+      <class>.btn:hover, .btn.active, .compare-info .btn-cart:hover</class>
+      <value>e94e05</value>
+      <style>border-color</style>
+    </item>
+    <item>
+      <text>Button 2 background color normal</text>
+      <name>button_2_bg_normal</name>
+      <class>.btn.btn-gray, #cart > .btn, .compare-info .btn-wishlist</class>
+      <value>fd5f14</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Button 2 text color normal</text>
+      <name>button_2_text_normal</name>
+      <class>.btn.btn-gray, #cart > .btn, .compare-info .btn-wishlist</class>
+      <value>ffffff</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Button 2 border color</text>
+      <name>button_2_border_color</name>
+      <class>.btn.btn-gray, #cart > .btn, .compare-info .btn-wishlist</class>
+      <value>fd5f14</value>
+      <style>border-color</style>
+    </item>
+    <item>
+      <text>Button 3 background color normal</text>
+      <name>button_4_bg_normal</name>
+      <class>.jGrowl-button .buttons .btn, #cart .dropdown-menu .cart_bottom .buttons .btn</class>
+      <value>transparent</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Button 3 background color hover</text>
+      <name>button_4_bg_hv</name>
+      <class>.jGrowl-button .buttons .btn:hover, #cart .dropdown-menu .cart_bottom .buttons .btn:hover</class>
+      <value>ffffff</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Button 3 text color normal</text>
+      <name>button_4_text_normal</name>
+      <class>.jGrowl-button .buttons .btn, #cart .dropdown-menu .cart_bottom .buttons .btn</class>
+      <value>ffffff</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Button 3 text color hover</text>
+      <name>button_4_text_hv</name>
+      <class>.jGrowl-button .buttons .btn:hover, #cart .dropdown-menu .cart_bottom .buttons .btn:hover</class>
+      <value>fd5f14</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Button 3 border color</text>
+      <name>button_4_border_color</name>
+      <class>.jGrowl-button .buttons .btn, #cart .dropdown-menu .cart_bottom .buttons .btn</class>
+      <value>ffffff</value>
+      <style>border-color</style>
+    </item>
+    <item>
+      <text>Button 3 border color hover</text>
+      <name>button_4_border_hv</name>
+      <class>.jGrowl-button .buttons .btn:hover, #cart .dropdown-menu .cart_bottom .buttons .btn:hover</class>
+      <value>ffffff</value>
+      <style>border-color</style>
+    </item>
+    <item>
+      <text>Button wishlist/compare background normal</text>
+      <name>button_3_bg_normal</name>
+      <class>.button-group button</class>
+      <value>cccccc</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Button wishlist/compare background hover</text>
+      <name>button_3_bg_hover</name>
+      <class>.button-group button:hover</class>
+      <value>fd5f14</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Button wishlist/compare text color normal</text>
+      <name>button_3_text_normal</name>
+      <class>.button-group button</class>
+      <value>ffffff</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Button wishlist/compare text color hover</text>
+      <name>button_3_text_hover</name>
+      <class>.button-group button:hover</class>
+      <value>ffffff</value>
+      <style>color</style>
+    </item>
+  </groups>
+  <groups>
+    <title>Title</title>
+    <item>
+      <text>Page title</text>
+      <name>t_page</name>
+      <class>.box.bt-filter  .box-content  .list  a.title,.box.account .box-heading,.register h1,h1.block-title,.article-related h1, .boss_article-detail .product-related h1,.boss_article-detail .comments h1, .boss_article-detail + .bt-facecomments h1</class>
+      <value>303030</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Breadcrumb normal color</text>
+      <name>t_bread_normal</name>
+      <class>.breadcrumb a</class>
+      <value>d0d0d0</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Breadcrumb hover color</text>
+      <name>t_bread_hover</name>
+      <class>.breadcrumb a:hover, .breadcrumb li:last-child a</class>
+      <value>fd5f14</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Heading  color</text>
+      <name>t_heading_color</name>
+      <class>h1, h2, h3,.box.boss-recent-post .box-heading span</class>
+      <value>000000</value>
+      <style>color</style>
+    </item>
+  </groups>
+</items_setting>
